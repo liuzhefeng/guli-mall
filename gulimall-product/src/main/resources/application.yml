@@ -4,6 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://192.168.56.101:3306/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: gulimall-product
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.101:8848
 
 #mybatis
 mybatis-plus:
