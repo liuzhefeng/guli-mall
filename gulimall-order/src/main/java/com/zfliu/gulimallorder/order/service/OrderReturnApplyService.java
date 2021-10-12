@@ -1,0 +1,20 @@
+package com.zfliu.gulimallorder.order.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.zfliu.common.utils.PageUtils;
+import com.zfliu.gulimallorder.order.entity.OrderReturnApplyEntity;
+
+import java.util.Map;
+
+/**
+ * 订单退货申请
+ *
+ * @author zfliu
+ * @email zfliu@gmail.com
+ * @date 2021-10-12 11:15:47
+ */
+public interface OrderReturnApplyService extends IService<OrderReturnApplyEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+

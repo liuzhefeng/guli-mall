@@ -1,7 +1,8 @@
 package com.zfliu.gulimallproduct;
 
-import com.zfliu.gulimallproduct.entity.BrandEntity;
-import com.zfliu.gulimallproduct.service.BrandService;
+
+import com.zfliu.gulimallproduct.product.entity.BrandEntity;
+import com.zfliu.gulimallproduct.product.service.BrandService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
