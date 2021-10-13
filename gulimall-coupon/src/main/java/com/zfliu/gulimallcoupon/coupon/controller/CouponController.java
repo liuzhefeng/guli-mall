@@ -5,7 +5,6 @@ import com.zfliu.common.utils.R;
 import com.zfliu.gulimallcoupon.coupon.entity.CouponEntity;
 import com.zfliu.gulimallcoupon.coupon.service.CouponService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,16 +27,16 @@ public class CouponController {
     private CouponService couponService;
 
     /*nacos配置中心测试*/
-    @Value("${coupon.user.name}")
-    private String name;
-
-    @Value("${coupon.user.age}")
-    private Integer age;
-
-    @RequestMapping("/test")
-    public R test() {
-        return R.ok().put("name", name).put("age", age);
-    }
+//    @Value("${coupon.user.name}")
+//    private String name;
+//
+//    @Value("${coupon.user.age}")
+//    private Integer age;
+//
+//    @RequestMapping("/test")
+//    public R test() {
+//        return R.ok().put("name", name).put("age", age);
+//    }
 
     /*openfeign测试*/
     @RequestMapping("/member/list")

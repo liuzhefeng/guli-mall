@@ -3,8 +3,9 @@
 
 <mapper namespace="com.zfliu.gulimallproduct.product.dao.CategoryBrandRelationDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.zfliu.gulimallproduct.product.entity.CategoryBrandRelationEntity" id="categoryBrandRelationMap">
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zfliu.gulimallproduct.product.entity.CategoryBrandRelationEntity"
+               id="categoryBrandRelationMap">
         <result property="id" column="id"/>
         <result property="brandId" column="brand_id"/>
         <result property="catelogId" column="catelog_id"/>
